@@ -41,15 +41,15 @@
 //
 // Steppers
 //
-#ifndef E1_STEP_PIN
-  #define E1_STEP_PIN                      P0_01
-#endif
-#ifndef E1_DIR_PIN
-  #define E1_DIR_PIN                       P0_00
-#endif
-#ifndef E1_ENABLE_PIN
-  #define E1_ENABLE_PIN                    P0_10
-#endif
+// #ifndef E1_STEP_PIN
+//   #define E1_STEP_PIN                      P0_01
+// #endif
+// #ifndef E1_DIR_PIN
+//   #define E1_DIR_PIN                       P0_00
+// #endif
+// #ifndef E1_ENABLE_PIN
+//   #define E1_ENABLE_PIN                    P0_10
+// #endif
 
 //
 // Temperature Sensors
@@ -75,10 +75,10 @@
 
 // CS, MISO, MOSI, and SCK for MAX Thermocouple SPI
 #if HAS_MAX_TC
-  //#define TEMP_0_CS_PIN   P...
-  //#define TEMP_0_MISO_PIN P...
-  //#define TEMP_0_MOSI_PIN P...
-  //#define TEMP_0_SCK_PIN  P...
+  #define TEMP_0_CS_PIN   P1_01
+  #define TEMP_0_MISO_PIN P0_05  //SDO
+  #define TEMP_0_MOSI_PIN P1_17  //SDI
+  #define TEMP_0_SCK_PIN  P0_04  //CLK
 
   //#define TEMP_1_CS_PIN   P...
   //#define TEMP_1_MISO_PIN P...
